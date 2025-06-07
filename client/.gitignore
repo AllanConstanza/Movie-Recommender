@@ -1,23 +1,34 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node dependencies
+node_modules/
+package-lock.json
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Python virtual environment and compiled files
+.venv/
+__pycache__/
+*.pyc
 
-# testing
+# OS files
+.DS_Store
+
+# Testing coverage
 /coverage
 
-# production
+# Production builds
 /build
 
-# misc
-.DS_Store
+# Yarn and npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# PnP (Yarn Plug'n'Play)
+.pnp/
+.pnp.js
+
