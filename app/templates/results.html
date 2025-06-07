@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Results</title>
+</head>
+<body>
+  <h1>Movie Recommendations</h1>
+
+  {% if movies %}
+    <ul>
+      {% for movie in movies[:5] %}
+        <li>
+          <strong>{{ movie.title }}</strong><br>
+          {{ movie.overview[:150] }}...
+
+          <form action="/rate" method="POST">
+            <input type="hidden" name="title" value="{{ movie.title }}">
+            <label>Rate out of 5:</label>
+            <input type="number" name="rating" min="1" max="5" required>
+            <button type="submit">Save</button>
+          </form>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No movies found.</p>
+  {% endif %}
+
+  <br><a href="/">Back to Search</a>
+</body>
+</html>
+

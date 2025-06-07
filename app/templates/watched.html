@@ -1,0 +1,23 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watched Movies</title>
+</head>
+<body>
+  <h1>Watched Movies</h1>
+
+  {% if movies %}
+    <ul>
+      {% for title, rating in movies %}
+        <li><strong>{{ title }}</strong> - Rated: {{ rating }}/5</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No watched movies yet.</p>
+  {% endif %}
+
+  <br><a href="/">Back to Search</a>
+</body>
+</html>
