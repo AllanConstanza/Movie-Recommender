@@ -18,7 +18,7 @@ A full stack web application that helps users discover popular and genre-specifi
 - **Flask** (Python web framework)
 - **SQLite** for persistent watch-later storage
 - **TMDB API** (The Movie Database) for real movie data
-- **Render (Web Service)** for backend hosting
+- **Render** for backend hosting (free version takes few seconds to start up)
 
 ---
 
@@ -33,7 +33,8 @@ A full stack web application that helps users discover popular and genre-specifi
 
 ---
 
-## 🧪 How It Works
+## How It Works
+**Please allow up to 30 seconds to initially load in movies**
 
 - On load, the app fetches **popular movies** from the TMDB API.
 - Users can search using **genre** and optional **keywords**.
