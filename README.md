@@ -1,5 +1,6 @@
 # 🎬 Movie Recommender App
 
+**Please allow up to 30 seconds to initially load in movies**
 A full stack web application that helps users discover popular and genre-specific movies, and save favorites to a “Watch Later” list.
 
 🌐 **Live Website**:  
